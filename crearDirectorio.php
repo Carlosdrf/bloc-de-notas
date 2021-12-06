@@ -53,7 +53,7 @@ if(isset($_POST["directorio"])){
     <input type="submit" value="Crear">
     </form>
     <br><br>
-        <a href="escribir.php">Click aqui para crear archivos</a>
+        <a href="index.php">Click aqui para crear archivos</a>
     </div>
 </body>
 </html>
