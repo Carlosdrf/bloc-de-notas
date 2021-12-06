@@ -16,7 +16,7 @@ if(isset($_POST["escribir"]))
         if(fwrite($manejador, $contenido))
         {
             fwrite($manejador, "\n\n");
-            $msg .= "Archivo creado con exito, disponible en... <a href ='$ruta' download target='_blank'>$ruta</a>";
+            $msg .= "Archivo creado con exito, disponible en... <a href ='$ruta' target='_blank'>$ruta</a> <a href ='$ruta' download target='_blank'>descargar</a>";
         }else{
             $msg= "ha habido un error al crear el fichero";
         } 
@@ -27,7 +27,7 @@ if(isset($_POST["escribir"]))
         {
             fwrite($manejador, "\n\n");
         
-            $msg .= "Archivo creado con exito, disponible en... <a href ='$ruta' download target='_blank'>$ruta</a>";
+            $msg .= "Archivo creado con exito, disponible en... <a href ='$ruta' target='_blank'>$ruta</a> <a href ='$ruta' download target='_blank'>descargar</a>";
         }else{
             $msg= "ha habido un error al crear el fichero";
         }
